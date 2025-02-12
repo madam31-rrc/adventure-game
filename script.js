@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const story = {
         start: {
+            text: "Your adventure begins...",
+            choices: [
+                { text: "click to begin", next: "start" },
+                { text: "Click to begin", next: "cave" }
+            ]
+            },
+        start: {
             text: "You find yourself in a mystical forest. Do you follow the sound of water or explore a cave?",
             choices: [
                 { text: "Follow the sound of water", next: "waterfall" },
